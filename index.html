@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name — Portfolio</title>
+  <meta name="description" content="Portfolio of Your Name — designer and developer." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <a href="#top" class="nav__logo">YN<span class="dot">.</span></a>
+    <button class="nav__toggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+    <nav class="nav__links">
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact" class="btn btn--small">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero">
+      <p class="eyebrow"><span class="pulse"></span> Available for new projects</p>
+      <h1 class="hero__name">Your Name</h1>
+      <p class="hero__role">Designer &amp; Developer</p>
+      <p class="hero__intro">
+        I build clean, thoughtful digital experiences — from first sketch to shipped product.
+      </p>
+      <div class="hero__cta">
+        <a href="#work" class="btn">View my work</a>
+        <a href="#contact" class="btn btn--ghost">Get in touch</a>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <h2 class="section__title"><span class="num">01</span> About</h2>
+      <div class="about">
+        <p>
+          Hi, I'm <strong>Your Name</strong>. I'm a designer and developer who loves turning
+          ideas into simple, well-crafted products. I care about the details — typography,
+          motion, and code that's a pleasure to maintain.
+        </p>
+        <p>
+          When I'm not working, you'll find me exploring new tools, sketching interfaces,
+          or chasing a good cup of coffee.
+        </p>
+        <ul class="stats">
+          <li><span class="stats__num">5+</span><span>Years experience</span></li>
+          <li><span class="stats__num">40+</span><span>Projects shipped</span></li>
+          <li><span class="stats__num">20+</span><span>Happy clients</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Work -->
+    <section id="work" class="section">
+      <h2 class="section__title"><span class="num">02</span> Selected work</h2>
+      <div class="projects">
+        <article class="card">
+          <div class="card__thumb"><span>01</span></div>
+          <div class="card__body">
+            <h3>Project One</h3>
+            <p>A short description of the project, the problem it solved and your role.</p>
+            <ul class="tags"><li>Design</li><li>React</li></ul>
+            <a href="#" class="card__link">View project →</a>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__thumb"><span>02</span></div>
+          <div class="card__body">
+            <h3>Project Two</h3>
+            <p>A short description of the project, the problem it solved and your role.</p>
+            <ul class="tags"><li>Branding</li><li>Web</li></ul>
+            <a href="#" class="card__link">View project →</a>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__thumb"><span>03</span></div>
+          <div class="card__body">
+            <h3>Project Three</h3>
+            <p>A short description of the project, the problem it solved and your role.</p>
+            <ul class="tags"><li>Mobile</li><li>UX</li></ul>
+            <a href="#" class="card__link">View project →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <h2 class="section__title"><span class="num">03</span> Skills</h2>
+      <ul class="skills">
+        <li>HTML &amp; CSS</li>
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>UI / UX Design</li>
+        <li>Figma</li>
+        <li>Node.js</li>
+        <li>Branding</li>
+        <li>Accessibility</li>
+      </ul>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section contact">
+      <h2 class="section__title"><span class="num">04</span> Contact</h2>
+      <p class="contact__lead">Have a project in mind? Let's make something good together.</p>
+      <a href="mailto:hello@example.com" class="contact__email">hello@example.com</a>
+      <div class="socials">
+        <a href="#">GitHub</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">Instagram</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Your Name. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
